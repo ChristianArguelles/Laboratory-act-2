@@ -21,7 +21,7 @@ Skills.propTypes = {
 
 // Default props
 Skills.defaultProps = {
-    skills: ['JavaScript', 'React', 'CSS', 'HTML', 'Node.js'],
+    skills: ['JavaScript', 'React', 'CSS', 'HTML'],
 };
 
 export default Skills;

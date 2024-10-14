@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Container, Form, Button } from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
 
 const Contact = () => {
@@ -13,48 +12,25 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    history.push('/submission-success', formData);
+    history.push('/submission-success', { formData });
   };
 
   return (
-    <Container>
-      <h1>Contact Me</h1>
-      <Form onSubmit={handleSubmit}>
-        <Form.Group controlId="formName">
-          <Form.Label>Name</Form.Label>
-          <Form.Control
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
-        </Form.Group>
-        <Form.Group controlId="formEmail">
-          <Form.Label>Email</Form.Label>
-          <Form.Control
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-        </Form.Group>
-        <Form.Group controlId="formMessage">
-          <Form.Label>Message</Form.Label>
-          <Form.Control
-            as="textarea"
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            required
-          />
-        </Form.Group>
-        <Button variant="primary" type="submit">
-          Submit
-        </Button>
-      </Form>
-    </Container>
+    <form onSubmit={handleSubmit} className="p-4">
+      <div className="form-group">
+        <label>Name</label>
+        <input type="text" name="name" className="form-control" value={formData.name} onChange={handleChange} required />
+      </div>
+      <div className="form-group">
+        <label>Email</label>
+        <input type="email" name="email" className="form-control" value={formData.email} onChange={handleChange} required />
+      </div>
+      <div className="form-group">
+        <label>Message</label>
+        <textarea name="message" className="form-control" value={formData.message} onChange={handleChange} required />
+      </div>
+      <button type="submit" className="btn btn-primary">Submit</button>
+    </form>
   );
 };
 

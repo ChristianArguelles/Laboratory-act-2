@@ -1,17 +1,18 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
 
-const Skills = () => (
-  <Container>
-    <h1>My Skills</h1>
-    <ul>
-      <li>JavaScript</li>
-      <li>React</li>
-      <li>CSS</li>
-      <li>HTML</li>
-      <li>Node.js</li>
-    </ul>
-  </Container>
-);
+const Skills = () => {
+  return (
+    <div>
+      <h2>My Skills</h2>
+      <ul>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>CSS</li>
+        <li>HTML</li>
+        <li>Node.js</li>
+      </ul>
+    </div>
+  );
+};
 
 export default Skills;

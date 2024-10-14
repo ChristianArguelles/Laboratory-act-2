@@ -1,11 +1,12 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
 
-const About = () => (
-  <Container>
-    <h1>About Me</h1>
-    <p>Im Christian C. Arguelles, including my background, education, and work experience.</p>
-  </Container>
-);
+const About = () => {
+  return (
+    <div>
+      <h2>About Me</h2>
+      <p>I enjoy hiking, reading, and coding. I have a background in computer science and experience in software development.</p>
+    </div>
+  );
+};
 
 export default About;

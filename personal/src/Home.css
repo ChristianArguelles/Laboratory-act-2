@@ -1,0 +1,15 @@
+.home-container {
+    background: linear-gradient(to right, #007bff, #0056b3);
+    padding: 100px 20px;
+    color: white;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  p {
+    font-size: 1.5rem;
+  }
+  
